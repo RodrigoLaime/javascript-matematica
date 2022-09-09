@@ -1,5 +1,6 @@
+const PlatziMath = {};
 // [1,2,3,4] CALCULAR PROMEDIO-----------------------
-function calcularPromedio(lista) {
+PlatziMath.calcularPromedio = function calcularPromedio(lista) {
   
   function sumarTodosElementos(valorAcumulado, nuevoValor){ //recive 2 parametros
     return valorAcumulado + nuevoValor;
@@ -10,20 +11,19 @@ function calcularPromedio(lista) {
   return promedio;
 }
 
-/* ejemplo arrowfunction*/
-const sumaLista2 = ((a, b) => a + b);
 
 
 /* CALCULAR MEDIANA------------------------------- */
 
-function esPar(lista) {
+
+PlatziMath.esPar = function esPar(lista) {
   return !(lista.length % 2); // si saca 0 es par
 }
-function esInpar(lista) {
+PlatziMath.esInpar = function esInpar(lista) {
   return lista.length % 2; //si saca 1 numero es inpar
 }
 
-function calcularModa(lista) {
+PlatziMath.calcularModa = function calcularModa(lista) {
   const listaCount = {};
   
   for (let i = 0; i < lista.length; i++){ //recorrer la lista
@@ -35,19 +35,28 @@ function calcularModa(lista) {
       listaCount[elemento] = 1; //crear una nueva propiedad llave y valor
     }
   }
-  console.log(listaCount);
+  
+  const listaArray = Object.entries(listaCount);
+  const listaOrdenada = ordenarListaBidimencional(listaArray, 1);
+  const listaMaxNumber = listaOrdenada[listaOrdenada.length - 1];
+  /* console.log({listaCount, listaArray, listaOrdenada,listaMaxNumber}); */
+ /*  console.log(`La moda es: ${listaMaxNumber[0]}`); */
+ const moda = listaMaxNumber[0];
+ return moda;
 }
 
-function calcularMediana(listaDesordenada) {
-  const lista = ordenarLista(listaDesordenada);
-  const listaEsPar = esPar(lista);
+PlatziMath.calcularMediana = function calcularMediana(listaDesordenada) {
+  const lista = PlatziMath.ordenarLista(listaDesordenada);
+  const listaEsPar = PlatziMath.esPar(lista);
   if (listaEsPar) {
-    const mitad1ListaPar = lista[(lista.length / 2) - 1];
-    const mitad2ListaPar = lista[lista.length / 2];
-    
-    const listaMitades = [mitad1ListaPar, mitad2ListaPar];
+    const mitad1ListaPar = (lista.length / 2) - 1;
+    const mitad2ListaPar = lista.length / 2;
+    const listaMitades = [];
+    listaMitades.push(lista[mitad1ListaPar]);
+    listaMitades.push(lista[mitad2ListaPar]);
+    /* const listaMitades = [mitad1ListaPar, mitad2ListaPar]; */
 
-    const medianaListaPar = calcularPromedio(listaMitades);
+    const medianaListaPar = PlatziMath.calcularPromedio(listaMitades);
     return medianaListaPar;
   } else {
     const indexMitadListaImpar = Math.floor(lista.length / 2);
@@ -58,7 +67,7 @@ function calcularMediana(listaDesordenada) {
   }
 }
 
-function ordenarLista(listaDesordenada) {
+PlatziMath.ordenarLista = function ordenarLista(listaDesordenada) {
   function ordenarListaSort(valorAcumulado, nuevoValor) {
     /* if (valorAcumulado > nuevoValor) {
       return 1;
@@ -73,3 +82,16 @@ function ordenarLista(listaDesordenada) {
   const lista = listaDesordenada.sort(ordenarListaSort);
   return lista;
 }
+
+PlatziMath.ordenarListaBidimencional = function ordenarListaBidimencional(listaDesordenada) {
+  function ordenarListaSort(valorAcumulado, nuevoValor) {
+    return valorAcumulado[1] - nuevoValor[1];
+  }
+
+  const lista5 = listaDesordenada.sort(ordenarListaSort);
+  return lista5;
+}
+
+
+/* ejemplo arrowfunction*/
+/* const sumaLista2 = ((a, b) => a + b); */
