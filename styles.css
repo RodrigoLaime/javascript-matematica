@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  background-color: #0791e6;
+  font-size: 62.5%;
+}
+
+
+
+/* .a {
+  background-color: rgb(5, 107, 232);
+}
+.b {
+  background-color: rgb(27, 114, 206);
+}
+.c {
+  background-color: rgb(32, 56, 91);
+}
+.d {
+  background-color: rgb(51, 117, 255);
+} */
+
