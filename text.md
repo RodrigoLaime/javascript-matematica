@@ -1,8 +1,9 @@
 ##
 sort() //permite ordenar una lista de array
 
+Math.sqrt() = ayuda a colocar raiz cuadrada a numeros
 
-
+Math.pow(,) = ayuda a que un numero este elevado a una potencia, se le envia una 2 argumentos, el numero que queremos poner una potencia y el numero que va a ser la potencia
 
 ##
 .reduce = recive una funcion y la funcion reduce recive 2 parametros
@@ -20,6 +21,8 @@ Object.value: Para traer los VALORES
 .slice = copia el elementop del array y los pega en su array. ayudan agarrar un arreglo y trabajar con cierta cantidad de esos arreglos, crea un nuevo arreglo utilizando los elementos del arreglo, 
 .splice = quita los elementos del array y los guardada en su array.
 
+
+para colocar al cuadrado oprimir (alt253)
 ##
 1.
 ¿Qué métodos de JavaScript nos permite agrupar y colapsar mensajes en la consola?
