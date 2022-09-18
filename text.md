@@ -5,8 +5,9 @@ sort() //permite ordenar una lista de array
 
 
 ##
-.filter = devuelve un arreglo con todos los elementos ou objetos que tubieran la coincidencia
-.find = devuelve el primer objeto que encuentra que hace coincidencia
+.reduce = recive una funcion y la funcion reduce recive 2 parametros
+.filter = devuelve un ARREGLO con todos los elementos U objetos que tubieran la coincidencia
+.find = devuelve el primer OBJETO que encuentra que hace coincidencia
 .map = nos ayuda a recorrer todos los elementos de una array y crear otro array a apartir de ese array
 
 .forEach = recorre un array y no devuelve una elemento si que ejecuta una funcion por cada elemento de un array
@@ -35,10 +36,9 @@ Para cortar alguna cantidad de elementos dentro de un array.
 5.
 ¿Cómo calculamos la mitad de la cantidad de elementos de una lista impar?
 lista.length / 2
-6.-mal video 25
+6.
 ¿Cuál método o propiedad de los arrays en JavaScript es el correcto para extraer los elementos 1, 2 y 3 del siguiente array: [“Natalia”, “Juanita”, “Luisa”, “Tatiana”]?
-.reduce
-REPASAR CLASE
+.splice
 7.
 Necesitas analizar la riqueza / pobreza general de tu país. Debes evitar que el aumento excesivo de sueldo de una sola persona altere los resultados de tu análisis. ¿Qué herramienta estadística usarías?
 Mediana
@@ -57,6 +57,17 @@ El método .find devuelve el primer elemento que cumpla con nuestra validación.
 11.
 ¿Para qué sirve el método .reduce de los arrays?
 Para reducir nuestro array a 1 solo valor ejecutando un cálculo por cada elemento.
-12.-mal video 11
+12.
 Tienes una lista de números. Quieres obtener la suma de todos ellos. ¿Cuál método de los arrays está especialmente diseñado para esto?
-.forEach
+. reduce
+
+///
+11 mal
+¿Cómo funciona el método .sort de los arrays?
+Ejecuta una función por cada elemento del array. En cada iteración recibimos 2 parámetros (e.j. a y b).
+El primero representa al valor acumulado y el segundo a cada elemento del array. En el return de la función debemos devolver un número positivo (si b es mayor que a), negativo (si b es menor que a) o 0 (si son iguales).
+
+REPASAR CLASE
+12.mal
+Necesitas duplicar el valor de cada elemento de tu array. ¿Qué método usarías?
+.slice
