@@ -29,8 +29,9 @@ Object.value: Para traer los VALORES
 .splice = quita los elementos del array y los guardada en su array.
 
 
-para colocar al cuadrado oprimir (alt253)
-##
+para colocar un numero al cuadrado oprimir (alt253)
+
+##Taller Práctico de JavaScript: Matemáticas y Estadística Básica
 1.
 ¿Qué métodos de JavaScript nos permite agrupar y colapsar mensajes en la consola?
 console.group('Tema') y console.groupEnd('Tema')
@@ -52,11 +53,11 @@ lista.length / 2
 7.
 Necesitas analizar la riqueza / pobreza general de tu país. Debes evitar que el aumento excesivo de sueldo de una sola persona altere los resultados de tu análisis. ¿Qué herramienta estadística usarías?
 Mediana
-8.-mal video 9
+8.
 ¿Cuál de las siguientes herramientas estadísticas soporta emojis (no solo números, sino cualquier elemento o cosa)?
 
-Media Aritmética
-REPASAR CLASE
+Moda
+
 9.
 ¿Cuál de las siguientes herramientas estadísticas se calcula ligeramente diferente dependiendo de si la lista es par o impar?
 
@@ -72,12 +73,14 @@ Tienes una lista de números. Quieres obtener la suma de todos ellos. ¿Cuál m�
 . reduce
 
 ///
-11 mal
+11 
 ¿Cómo funciona el método .sort de los arrays?
 Ejecuta una función por cada elemento del array. En cada iteración recibimos 2 parámetros (e.j. a y b).
-El primero representa al valor acumulado y el segundo a cada elemento del array. En el return de la función debemos devolver un número positivo (si b es mayor que a), negativo (si b es menor que a) o 0 (si son iguales).
+Ambos representan a diferentes elementos del array. En el return de la función debemos devolver un número positivo (para mover a a después de b), negativo (para mover a a antes que a b) o 0 (dejar todo igual).
 
-REPASAR CLASE
-12.mal
+12
 Necesitas duplicar el valor de cada elemento de tu array. ¿Qué método usarías?
-.slice
+.map
+
+<!-- hacer una calculadora
+https://www.youtube.com/watch?v=P_KG2BJfOgQ&list=PLg9145ptuAijmLpVEIJxVl5r9mCDjzIRU&index=15 -->

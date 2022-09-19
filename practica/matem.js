@@ -1,3 +1,5 @@
+
+
 /*//es una forma de sacar el promedio 
 function calcularPromedio(lista) { 
   let sumaLista = 0;
