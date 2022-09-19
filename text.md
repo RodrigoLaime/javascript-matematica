@@ -5,13 +5,20 @@ Math.sqrt() = ayuda a colocar raiz cuadrada a numeros
 
 Math.pow(,) = ayuda a que un numero este elevado a una potencia, se le envia una 2 argumentos, el numero que queremos poner una potencia y el numero que va a ser la potencia
 
+Math.round()
+Obtiene el siguiente numero mas cercano( si es >.5 redondea hacia arriba, si es <.5 redonda hacia abajo)
+
+Math.floor() = Obtiene el numero entero anterior mas cercano (redondear hacia abajo).
+
+Math.round()
+Obtiene el siguiente numero mas cercano( si es >.5 redondea hacia arriba, si es <.5 redonda hacia abajo)
 ##
 .reduce = recive una funcion y la funcion reduce recive 2 parametros
 .filter = devuelve un ARREGLO con todos los elementos U objetos que tubieran la coincidencia
 .find = devuelve el primer OBJETO que encuentra que hace coincidencia
 .map = nos ayuda a recorrer todos los elementos de una array y crear otro array a apartir de ese array
 
-.forEach = recorre un array y no devuelve una elemento si que ejecuta una funcion por cada elemento de un array
+.forEach = recorre un array y no devuelve una elemento si no que ejecuta una funcion por cada elemento de un array
 
 
 Object.entries = sirve para convertir un objeto en array, para sacar un arreglo que tenia tanto la LLAVE como el VALOR en arreglo dentro de otros arreglos y esos eran los arreglos bidimencionales
